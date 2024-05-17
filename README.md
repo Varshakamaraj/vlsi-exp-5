@@ -1,18 +1,17 @@
 EXP.NO: 05
 
-DATE : 16.04.2024
+DATE: 16/04/2024
 
 SIMULATION AND IMPLEMENTATION OF FINITE STATE MACHINE
 
- AIM:  To simulate and synthesis finite state machine using Xilinx ISE. 
+AIM:  To simulate and synthesis finite state machine using Xilinx ISE. 
  
- APPARATUS REQUIRED:
- 
+APPARATUS REQUIRED:
  Vivado 2023.2
  
 PROCEDURE: 
 
-STEP:1 Start the Xilinx navigator, Select and Name the New project
+STEP:1 Start the Xilinx navigator, Select and Name the New project.
 
 STEP:2 Select the device family, device, package and speed.
 
@@ -38,10 +37,10 @@ STEP:12 Load the Bit file into the SPARTAN 6 FPGA
 
 LOGIC DIAGRAM:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-5/assets/160568747/cb7e633e-cb41-448e-8545-bda138f475a5)
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-5/assets/165583967/a3dbfb8b-67d1-40e2-8ee6-4c4b07e47738)
 
  
+
 VERILOG CODE:
 
 module fsm(clk,rst,x,z);
@@ -57,6 +56,7 @@ parameter s0=2'b00,s1=2'b01,s2=2'b10,s3=2'b11;
 always@(x,posedge clk)
 
 case(ps)
+
 
 s0:if(x)
 
@@ -106,12 +106,15 @@ assign z=(ps==s3);
 
 endmodule.
 
+
+
 OUTPUT:
 
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-5/assets/165583967/316d3e81-99c0-432c-a7ce-f3511a95bb49)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-5/assets/160568747/17cfee05-1088-406c-81c5-15761037433f)
 
- 
+
+
 RESULT:
 
 The simulate and synthesis of finite state machine using VIVADO is successfully verified.
